@@ -1,0 +1,17 @@
+[project]
+name = 'aioplate'
+version = "1.0.0"
+description = "Library to generate project prefiiled template with two commands"
+authors = [
+    {name = "Juxan Calls", email = "julyfortune101@gmail.com"}
+]
+keywords = ["codegen", "aiogram"]
+dependencies = []
+
+[project.scripts]
+plate = "aioplate.init_plate:make_init_file"
+gen = "aioplate.main:main"
+
+[tool.isort]
+profile = "black"
+include_trailing_comma = true
