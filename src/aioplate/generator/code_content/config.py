@@ -10,7 +10,8 @@ class ConfigGenerator(ImportsRenderer):
             "contextlib": ["suppress"],
             "typing": ["TextIO"],
         }
-        self.configs = configs
+        self.configs = {"Telegram": {"str": ["TOKEN"]}}
+        self.configs.update(configs)
 
     def generate_configs(self) -> str:
         imports = self._get_imports()

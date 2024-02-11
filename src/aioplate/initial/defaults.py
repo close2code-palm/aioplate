@@ -1,5 +1,5 @@
-from aioplate.entities import FolderKeys, Setup, Structure
-from aioplate.framework import MIDDLEWARES, ROUTERS
+from aioplate.initial.entities import FolderKeys, Structure
+from aioplate.initial.framework import MIDDLEWARES, ROUTERS
 
 
 class IntroBotPlate(Structure):
@@ -19,9 +19,9 @@ class IntroBotPlate(Structure):
     ]
 
 
-class ProSetup(Setup):
-    config_type = "env"
-    register = "decorator"
+# class ProSetup(Setup):
+#     config_type = "env"
+#     register = "decorator"
 
 
-TOKEN_CONFIG = {"tg": {"str": ["TOKEN"]}}
+# TOKEN_CONFIG = {"tg": {"str": ["TOKEN"]}}

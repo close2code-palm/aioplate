@@ -1,9 +1,9 @@
 import warnings
 from typing import cast
 
-from aioplate.entities import Folder
+from aioplate.initial.entities import Folder
 from aioplate.exceptions import NoRoutersPathToGenerate
-from aioplate.framework import CALLBACK, INLINE, MESSAGE, MIDDLEWARES, ROUTERS
+from aioplate.initial.framework import CALLBACK, INLINE, MESSAGE, MIDDLEWARES, ROUTERS
 from aioplate.generator.code_content.config import ConfigGenerator
 from aioplate.generator.code_content.main import MainModuleGenerator
 from aioplate.generator.code_content.middleware import (
@@ -18,7 +18,7 @@ from aioplate.generator.code_content.router import (
     RouterInitGenerator,
     RouterPackageGenerator,
 )
-from aioplate.generator.constructor import (
+from aioplate.extractor.constructor import (
     ApplicationContext,
     CodeWriter,
     StructureGenerator,

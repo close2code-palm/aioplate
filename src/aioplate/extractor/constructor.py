@@ -1,12 +1,11 @@
 import abc
-from contextlib import suppress
 from dataclasses import dataclass, field
 from typing import Protocol
 
-from aioplate.defaults import IntroBotPlate
-from aioplate.entities import Structure
+from aioplate.initial.defaults import IntroBotPlate
+from aioplate.initial.entities import Structure
 from aioplate.exceptions import InvalidHandler
-from aioplate.framework import CALLBACK, INLINE, MESSAGE
+from aioplate.initial.framework import CALLBACK, INLINE, MESSAGE
 from aioplate.gen_types import Imports
 from aioplate.generator.imports_utils import update_imports
 from aioplate.utils import camel_to_snake
@@ -32,23 +31,6 @@ class StructureGenerator(Protocol):
 
 class ContentContext(Protocol):
     """Empty interface"""
-
-
-# class FileContext:
-#     def __init__(
-#         self,
-#         filename: str,
-#         dir_path: Path,
-#         code_contexts: list[ContentContext],
-#     ):
-#         self.filename = filename
-#         self.code_contexts = code_contexts
-#         self.dir_path = dir_path
-
-
-# class ImportContext(ContentContext):
-#     def __init__(self):
-#         self.imports = collections.defaultdict(list)
 
 
 @dataclass

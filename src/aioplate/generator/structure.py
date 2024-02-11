@@ -1,8 +1,8 @@
 import os
 from contextlib import suppress
 
-from aioplate.entities import Folder
-from aioplate.generator.constructor import StructureGenerator
+from aioplate.initial.entities import Folder
+from aioplate.extractor.constructor import StructureGenerator
 
 
 def make_folder(path: str):

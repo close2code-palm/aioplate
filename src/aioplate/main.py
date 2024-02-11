@@ -1,10 +1,10 @@
-from aioplate.generator.constructor import (
+from aioplate.extractor.constructor import (
     ApplicationBuilder,
     ApplicationContext,
     ConfigContext,
 )
 from aioplate.generator.fs_factory import make_structure_initializer, make_writer
-from aioplate.parser import parse_plate
+from aioplate.extractor.parser import parse_plate
 
 
 def main():

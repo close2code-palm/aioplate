@@ -1,5 +1,5 @@
 import dataclasses
-from typing import Literal, Protocol, TypedDict, runtime_checkable
+from typing import Protocol, TypedDict, runtime_checkable
 
 
 @runtime_checkable
@@ -21,9 +21,9 @@ class Handler(Protocol):
     router: Router
 
 
-class Setup(Protocol):
-    config_type: Literal["env", "ini", "yaml"]
-    register: Literal["decorator", "function"]
+# class Setup(Protocol):
+#     config_type: Literal["env", "ini", "yaml"]
+#     register: Literal["decorator", "function"]
 
 
 class Folder(TypedDict, total=False):

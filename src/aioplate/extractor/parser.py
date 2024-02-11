@@ -1,6 +1,6 @@
 import ast
 
-from aioplate.generator.constructor import ApplicationBuilder, HandlerContext
+from aioplate.extractor.constructor import ApplicationBuilder
 from aioplate.utils import camel_to_snake
 
 

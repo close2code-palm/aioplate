@@ -1,10 +1,8 @@
-from dataclasses import dataclass
-
 from aioplate.generator.code_content.config import ConfigGenerator
 from aioplate.generator.code_content.main import MainModuleGenerator
 from aioplate.generator.code_content.middleware import MiddlewarePackageGenerator
 from aioplate.generator.code_content.router import RouterPackageGenerator
-from aioplate.generator.constructor import CodeWriter
+from aioplate.extractor.constructor import CodeWriter
 from aioplate.utils import camel_to_snake
 
 
