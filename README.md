@@ -4,6 +4,8 @@ Usage:
 some basic examples with commentaries
  - Run `gen` to get the template according to the plate.py
 
+You can see example of generated template in examples folder in repo
+
 ### Development path:
  - add pyproject.toml with linting
  - add structure parsing(loading done already)
